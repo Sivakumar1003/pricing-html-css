@@ -1,35 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Pricing component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Pricing component</title>
+</head>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
-  </body>
+<body>
+  <main>
+    <h1 id="heading">Our Pricing</h1>
+
+    <!-- toogle for price change -->
+    <div class="switch-container">
+      <span class=" plan">Annually</span>
+
+      <!-- toogle -->
+      <label class=" switch">
+        <input type="checkbox" id="priceSwitch" checked> 
+        <span class="slider"></span>
+      </label>
+
+      <span class="plan">Monthly</span>
+    </div>
+    <br>
+
+    <!-- all plan detais are here -->
+    <div class="details-container">
+
+      <!-- base plan -->
+      <div class="detail1 div">
+        <h2 class="planName">Basic</h2>
+        <h1 class="planPrice" id="basePrice">
+
+
+          <!-- monthly and annually plan -->
+          <span class="monthly">
+            <p class="dollar"> &dollar;</p> &nbsp;19.99
+          </span>
+          <span class="annually">
+            <p class="dollar"> &dollar;</p> &nbsp;199.99
+          </span>
+        </h1>
+        <hr>
+        <!-- base plan details -->
+        <p class="planDetail">500 GB Storage</p>
+        <hr>
+        <p class="planDetail"> 2 Users Allowed</p>
+        <hr>
+        <p class="planDetail">Send up to 3 GB </p>
+        <hr>
+        <div class="button-container">
+          <button class="button">LEARN MORE</button>
+        </div>
+      </div>
+
+      <!-- professional plan -->
+      <div class="detail2 div selected">
+        <h2 class="planName">Professional</h2>
+        <h1 class="planPrice" id="professionalPrice">
+
+          <!-- monthly and annually plan -->
+          <span class="monthly">
+            <p class="dollar"> &dollar;</p> &nbsp;24.99
+          </span>
+          <span class="annually">
+            <p class="dollar"> &dollar;</p> &nbsp;249.99
+          </span>
+        </h1>
+        <hr>
+
+        <!-- plan deatils -->
+        <p class="planDetail"> 1 TB Storage </p>
+        <hr>
+        <p class="planDetail"> 5 Users Allowed</p>
+        <hr>
+        <p class="planDetail">Send up to 10 GB</p>
+        <hr>
+        <div class="button-container">
+          <button class="button">LEARN MORE</button>
+        </div>
+      </div>
+
+      <!-- master plan -->
+      <div class="detail3 div">
+        <h2 class="planName">Master</h2>
+        <h1 class="planPrice" id="masterPrice">
+
+          <!-- monthly and annually palan -->
+          <span class="monthly">
+            <p class="dollar"> &dollar;</p> &nbsp;39.99
+          </span>
+          <span class="annually">
+            <p class="dollar"> &dollar;</p> &nbsp;399.99
+          </span>
+        </h1>
+        <hr>
+
+        <!-- plan deatils -->
+        <p class="planDetail">2 TB Storage</p>
+        <hr>
+        <p class="planDetail">10 Users Allowed</p>
+        <hr>
+        <p class="planDetail"> Send up to 20 GB</p>
+        <hr>
+        <div class="button-container">
+          <button class="button">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+</body>
+
 </html>
