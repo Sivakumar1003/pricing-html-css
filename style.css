@@ -14,6 +14,8 @@ body {
     text-align: center;
     opacity: 70%;
     color: hsl(232, 13%, 33%);
+    padding: 15px;
+    padding-top: 50px;
 }
 
 /* style for monthly and annualy line*/
@@ -22,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5%;
+    margin: 20px;
 }
 
 /* hide the input box */
@@ -78,6 +81,7 @@ input:checked+.slider:before {
     background-color: #ffffff;
     width: 85%;
     border-radius: 5%;
+    gap: 10px;
 }
 
 /* style for all plans name and details */
@@ -85,13 +89,19 @@ input:checked+.slider:before {
 .planDetail {
     text-align: center;
     font-weight: 1000;
+    padding: 15px;
+}
+
+.planName {
+    margin-top: 25px;
 }
 
 /*  all plans price */
 .planPrice {
     color: hsl(232, 13%, 33%);
-    font-size: 250%;
+    font-size: 350%;
     margin: 0;
+    padding: 15px;
 }
 
 /*  price dollar */
@@ -172,7 +182,7 @@ main:has(#priceSwitch:not(:checked)) .monthly {
         display: flex;
         flex-direction: column;
         width: 45%;
-        height: 500px;
+        height: 600px;
         border-radius: 15px;
     }
 
@@ -212,7 +222,7 @@ main:has(#priceSwitch:not(:checked)) .monthly {
         flex-direction: column;
         height: 630px;
         border-radius: 15px;
-        gap: 10px;
+        gap: 15px;
     }
 
     /* style for button */
